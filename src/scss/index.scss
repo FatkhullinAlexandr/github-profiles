@@ -1,0 +1,23 @@
+$main-color: rgb(220, 220, 220);
+$dark: #131922;
+
+@import 'null';
+@import 'header';
+@import 'search';
+@import 'result';
+@import 'card';
+
+body {
+    font-family: 'Inter';
+    background-color: #1c2128;
+}
+
+#root {
+    height: 100%;
+}
+
+.App {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}

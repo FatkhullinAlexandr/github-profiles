@@ -1,0 +1,43 @@
+.header {
+    border-bottom: 0.5px solid $main-color;
+
+    &-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 10px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &-logo {
+        display: flex;
+        align-items: center;
+        svg {
+            margin-right: 10px;
+            path {
+                fill: $main-color;
+            }
+        }
+        span {
+            font-weight: 600;
+            color: $main-color;
+        }
+    }
+
+    &-list {
+        display: flex;
+        li {
+            &:not(:last-child) {
+                margin-right: 15px;
+            }
+            a {
+                color: $main-color;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
